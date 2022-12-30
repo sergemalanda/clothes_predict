@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My application</title>
+    </head>
+    <body style="position:relative; left:550px">
+        
+        <h1 style="color: orange; size:50px; position: relative; left: -100px;">Bienvenue dans mon application pour notre travail</h1>><br>
+        <h2 style="color: orange; size:50px; position: relative; left: 0px"> Prediction du prix dans une boutique</h2></br>
+        <form action="/prediction_prix/predict/" method="POST"><br>
+            {% csrf_token %}
+            <label style="color: blue";>nombre de bijoux</label>
+            <input style="color: red;" style="" type="number" name="nbre_bijoux"/><br><br>
+            <label style="color: green;">nombre de soulier</label>
+            <input type="number" name="nbre_soulier"/><br><br>
+            <label style="color: yellow;">nombre de pantalon</label>
+            <input type="number" name="nbre_pantalon"/><br><br>
+            <label type="color: brown;">nombre de montre</label>
+            <input type="number" name="nbre_montre"/><br><br>
+            <label type="color: orange;">nombre de chapeau</label>
+            <input type="number" name="nbre_chapeau"/><br><br>
+            <label>nombre de chemise</label>
+            <input type="number" name="nbre_chemise"/><br><br>
+            <label>nombre de lacoste</label>
+            <input type="number" name="nbre_lacoste"/><br><br>
+            <label>nombre de robe</label>
+            <input type="number" name="nbre_robe"/><br><br>
+            <label> nombre de chainette</label>
+            <input type="number" name="nbre_chainette"/><br><br>
+            <input type="submit" value="predire"/>
+        </form>
+    </body>
+</html>            
